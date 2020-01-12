@@ -70,7 +70,13 @@ public class SortFruitObject{
 		fruits[3] = banana;
 		fruits[4] = mango;
 		
-		Arrays.parallelSort(fruits);
+		//this is for example 3:
+		// Arrays.sort(fruits);
+		
+		//4. --> Sort an Object with Comparator
+		Arrays.sort(fruits); // --> quantity
+		//Arrays.sort(fruits, Fruit.FruitNameComparator); // --> by name
+		
 		
 		int i = 0;
 		for (Fruit temp : fruits) {
